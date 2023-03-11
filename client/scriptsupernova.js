@@ -1,9 +1,8 @@
-import bot from './assets/bro.png'
+import bot from './assets/supernova.png'
 import user from './assets/user.svg'
 
 const form = document.querySelector('form')
 const chatContainer = document.querySelector('#chat_container')
-
 
 let loadInterval
 
@@ -87,14 +86,13 @@ const handleSubmit = async (e) => {
     // messageDiv.innerHTML = "..."
     loader(messageDiv)
 
-    
     const response = await fetch('http://localhost:5142', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-            prompt: 'Je suis un gars',
+            prompt: data.get('prompt'),
             temperature: 1,
             max_tokens: 3000,
             top_p: 0.8,

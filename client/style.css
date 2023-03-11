@@ -148,3 +148,18 @@ form img {
   width: 30px;
   height: 30px;
 }
+
+.white-btn {
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  text-align: center;
+}
+
+.body-bro {
+  background-image: url("assets/bro.png");
+  background-size: contain;
+  max-width: 66%;
+  background-repeat: no-repeat;
+}
