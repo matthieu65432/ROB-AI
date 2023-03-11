@@ -6,9 +6,9 @@ export default defineConfig({
     assetsDir: 'assets',
     rollupOptions: {
       input: {
-        main: './client/index.html',
-        bro: './client/bro.html',
-        supernova: './client/supernova.html'
+        index: './index.html',
+        bro: './bro.html',
+        supernova: './supernova.html'
       }
     }
   }
